@@ -19,5 +19,5 @@
 select log_date,
 stories_shared,
 sum(stories_shared) over(order by log_date
-  rows between unbounded preceding and current row) as runnig_total
+  rows between unbounded preceding and current row) as running_total
 from story_log;
